@@ -1,0 +1,8 @@
+Change Directory: cd <dirname>
+Make Directory: mkdir <dirname>
+Rename Directory: mv <oldname> <newname>
+List files: ls <dirname>
+Move file: mv <current path (relative/absolute)> <new path (relative/absolute)>
+Copy file: cp <current path (relative/absolute)> <new path (relative/absolute)>
+Search for string in file: grep <string> <filename>
+Access the shell of a remote machine: ssh remote_user@remote_host

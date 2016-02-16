@@ -1,0 +1,232 @@
+/*----------------- CSS RESET ------------------*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*----------------- CSS RESET ------------------*/
+
+
+body{
+	font-size: 18px;
+	box-sizing: border-box;
+}
+
+.navbar {
+	box-sizing: border-box;
+	height: 5%;
+}
+
+.navbar img{
+	box-sizing: border-box;
+	float: left;
+	padding: 0.5% 0.5%;
+	max-height: 98%;
+}
+
+#co_name{
+	display: inline-block;
+	box-sizing: border-box;
+	font:1em Futura, 'Century Gothic', AppleGothic, sans-serif;
+   	padding: 0.75% 0.7%;
+	width: 90%;
+	height: 100%;
+}
+
+#account{
+	box-sizing: border-box;
+	display: inline-block;
+	font:0.7em Futura, 'Century Gothic', AppleGothic, sans-serif;
+   	padding: 0.75% 0.7%;
+	height: 100%;
+}
+
+.banner{
+	box-sizing: border-box;
+	background-color: #BE2F25;
+	width: 100%;
+    height: 40%;
+    z-index: -1;
+    text-align: center;
+}
+
+.banner p{
+	box-sizing: border-box;
+	color: #F3F3F1;
+	font:1.5em Futura, 'Century Gothic', AppleGothic, sans-serif;
+    padding-top: 3%;
+}
+
+.sbox{
+	box-sizing: border-box;
+	display: inline-block;
+	padding-top: 3%;
+	width: 35%;
+	height: 70%;
+}
+
+.banner label{
+	box-sizing: border-box;
+	display: inline-block;
+	font:1em Futura, 'Century Gothic', AppleGothic, sans-serif;
+	color: #F3F3F1;
+}
+
+.banner input{
+	box-sizing: border-box;
+	display: inline-block;
+	background-color: #7B201A;
+	margin-left: 0.4em;
+	border: 0px;
+	border-radius: 0.4em;
+	height: 30%;
+	width: 50%;
+	font:1.4em Futura, 'Century Gothic', AppleGothic, sans-serif;
+}
+
+.banner button{
+	box-sizing: border-box;
+	display: inline-block;
+	border: 0px;
+	background-color: #F3F3F1;
+	height: 3em;
+	width: 5%;
+	border-radius: 1em;
+	font:1em Futura, 'Century Gothic', AppleGothic, sans-serif;
+}
+
+.banner button:hover{
+	background-color: #FFF3F5;
+}
+
+.main_content{
+	box-sizing: border-box;
+	display: inline-block;
+	width: 80%;
+	margin: 0 10%;
+	height: 100%;
+	background-color: #FAFAFA;
+}
+
+.filter_bar{
+	box-sizing: border-box;
+	display: inline-block;
+	width: 20%;
+	height: 100%;
+	padding: 2.5% 1%;
+	vertical-align: top;
+	background-color: #ECE3E8;
+}
+
+.right_container{
+	box-sizing: border-box;
+	display: inline-block;
+	width: 78%;
+	height: 100%;
+	text-align: center;
+}
+
+.filter_item{
+	box-sizing: border-box;
+	display: block;
+	padding: 3% 5%;
+	height: 3em;
+	border-bottom: 1px solid;
+	border-color: #E4AAA3;
+}
+
+.filter_item p{
+	font:1em Futura, 'Century Gothic', AppleGothic, sans-serif;
+}
+
+.current p{
+	color: #CA3C33;
+}
+
+.entry_item {
+	box-sizing: border-box;
+	display: inline-block;
+	padding: 3% 1%;
+	width: 32%;
+	height: 30%;
+}
+
+.entry_item img{
+	max-width: 100%;
+	height: 100%;
+	width: 100%;
+}
+.entry_item p{
+	font:1em Futura, 'Century Gothic', AppleGothic, sans-serif;
+	padding: 0.5em 0;
+}
+
+.bottomnav{
+	box-sizing: border-box;
+	display: inline-block;
+	background-color: #BE2F25;
+	width: 100%;
+    height: 40%;
+    z-index: -1;
+    text-align: center;
+}
+
+.bottomnav .target_group{
+	display: inline-block;
+	box-sizing: border-box;
+	width: 25%;
+	height: 100%;
+	padding: 4% 7%;
+	vertical-align: top;
+}
+
+.bottomnav .lead{
+	color: #F3F3F1;
+	font:1.5em Futura, 'Century Gothic', AppleGothic, sans-serif;
+}
+
+.bottomnav p{
+	color: #F3F3F1;
+	font:1em Futura, 'Century Gothic', AppleGothic, sans-serif;
+	padding: 1% 0;
+}

@@ -1,0 +1,279 @@
+/*----------------- CSS RESET ------------------*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*----------------- CSS RESET ------------------*/
+
+
+body{
+	font-size: 18px;
+	box-sizing: border-box;
+}
+
+.navbar {
+	box-sizing: border-box;
+	display: inline-block;
+	height: 3em;
+	width: 100%;
+}
+
+.navbar img{
+	box-sizing: border-box;
+	float: left;
+	padding: 0.5em 0.5em;
+	width: 3em;
+	height: auto;
+	max-height: 98%;
+}
+
+brandtext{
+	display: inline-block;
+	box-sizing: border-box;
+	font:1em Futura, 'Century Gothic', AppleGothic, sans-serif;
+   	padding: 0.75em 0.7em;
+	height: 100%;
+}
+
+#account{
+	box-sizing: border-box;
+	display: inline-block;
+	font:0.7em Futura, 'Century Gothic', AppleGothic, sans-serif;
+	width: 10%;
+   	padding: 1em 3em;
+	height: 100%;
+	float: right;
+	text-align: right;
+}
+
+.banner{
+	box-sizing: border-box;
+	background-color: #BE2F25;
+	width: 100%;
+    height: 20em;
+    text-align: center;
+}
+
+.banner h1{
+	box-sizing: border-box;
+	color: #F3F3F1;
+	font:1.5em Futura, 'Century Gothic', AppleGothic, sans-serif;
+    padding-top: 3em;
+}
+
+.lsbox, .rsbox {
+	box-sizing: border-box;
+	display: inline-block;
+	padding-top: 3em;	
+	height: 70%;
+}
+
+.lsbox {
+	width: 45%;
+}
+
+.rsbox {
+	width: 40%;
+}
+
+.banner label{
+	box-sizing: border-box;
+	display: inline-block;
+	font:1em Futura, 'Century Gothic', AppleGothic, sans-serif;
+	color: #F3F3F1;
+}
+
+.banner input[type="text"]{
+	box-sizing: border-box;
+	display: inline-block;
+	background-color: #7B201A;
+	margin-left: 0.4em;
+	border: 0px;
+	border-radius: 0.4em;
+	height: 2em;
+	width: 20em;
+	font:1.4em Futura, 'Century Gothic', AppleGothic, sans-serif;
+}
+
+.banner input[type="image"]{
+	box-sizing: border-box;
+	display: inline-block;
+	border: 0px;
+	height: 3em;
+	width: auto;
+	max-width: 100%;
+	margin: -1em;
+}
+
+.banner input[type="image"]:hover{
+	height: 3.2em;
+	border: 0px;
+}
+
+.hamburger{
+	width: 2em;
+	height: auto;
+	display: none;
+}
+
+.hamburger input[type="image"]{
+	max-width: 100%;
+}
+
+.hamburger input[type="image"]:hover{
+	height: 3.2em;
+}
+
+.main_content{
+	box-sizing: border-box;
+	display: inline-block;
+	width: 80%;
+	margin: 0 10%;
+	background-color: #FAFAFA;
+}
+
+.filter_bar{
+	box-sizing: border-box;
+	display: inline-block;
+	width: 20%;
+	padding: 2.5% 1%;
+	vertical-align: top;
+	/*background-color: #ECE3E8;*/
+}
+
+.right_container{
+	box-sizing: border-box;
+	display: inline-block;
+	width: 78%;
+	text-align: center;
+}
+
+.filter_item{
+	box-sizing: border-box;
+	display: block;
+	padding: 3% 5%;
+	height: 3em;
+	border-bottom: 1px solid;
+	border-color: #E4AAA3;
+}
+
+.filter_item p{
+	font:1em Futura, 'Century Gothic', AppleGothic, sans-serif;
+}
+
+.current p{
+	color: #CA3C33;
+}
+
+.entry_item {
+	box-sizing: border-box;
+	display: inline-block;
+	padding: 3% 1%;
+	width: 20em;
+	height: 17em;
+}
+
+.entry_item img{
+	max-width: 100%;
+	height: 90%;
+	width: 100%;
+}
+.entry_item p{
+	font:1em Futura, 'Century Gothic', AppleGothic, sans-serif;
+	padding: 0.5em 0;
+}
+
+.bottom_container{
+	box-sizing: border-box;
+	display: inline-block;
+	background-color: #BE2F25;
+	width: 100%;
+    height: 20em;
+    text-align: center;
+}
+
+.bottom_container .target_group{
+	display: inline-block;
+	box-sizing: border-box;
+	width: 25%;
+	height: 100%;
+	padding: 4% 7%;
+	vertical-align: top;
+}
+
+.bottom_container h2{
+	color: #F3F3F1;
+	font:1.5em Futura, 'Century Gothic', AppleGothic, sans-serif;
+	padding: 1% 0;
+}
+
+.bottom_container ul li{
+	color: #F3F3F1;
+	font:0.7em Futura, 'Century Gothic', AppleGothic, sans-serif;
+	padding: 1em;
+}
+
+.cc{
+	box-sizing: border-box;
+	display: inline-block;
+	width: 43%;
+	float: left;
+}
+
+cctext{
+	box-sizing: border-box;
+	display: inline-block;
+	font:0.7em Futura, 'Century Gothic', AppleGothic, sans-serif;
+	padding: 1%;
+}
+
+.social{
+	box-sizing: border-box;
+	display: inline-block;
+	width: 50%;
+}
+
+.social i{
+	padding: 1% 4%;
+}

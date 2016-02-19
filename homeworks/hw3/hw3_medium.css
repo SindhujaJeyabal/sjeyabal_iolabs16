@@ -1,0 +1,30 @@
+/* table-layout: */
+
+body{
+	font-size: 15px;
+	box-sizing: border-box;
+}
+
+/* Banner */
+
+.banner input[type="text"]{
+	width: 10em;
+}
+
+/* Main Container */
+
+/* Side Bar */
+.filter_item {
+	height: 2em;
+}
+
+.filter_item p{
+	font-size: 0.8em;
+}
+
+/* Right Container */
+
+.entry_item {
+	width: 15em;
+	height: 16em;
+}

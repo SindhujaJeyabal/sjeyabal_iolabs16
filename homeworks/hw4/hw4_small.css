@@ -1,0 +1,12 @@
+
+body{
+	font-size: 10px;
+}
+
+.todo, .completed {
+	width: 90%;
+}
+
+input[type="text"]{
+	font-size: 1em;
+}

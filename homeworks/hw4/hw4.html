@@ -1,0 +1,62 @@
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title> Hal il</title>
+
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<!-- Compiled and minified CSS -->
+  		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">	  
+		<link rel="stylesheet" type="text/css" href="hw4.css">
+		<link rel="stylesheet" type="text/css" media="(max-width: 667px)" href="hw4_small.css">
+		<link rel="stylesheet" type="text/css" media="(min-width: 668px) and (max-width: 800px)" href="hw4_medium.css">
+	</head>
+
+	<body>
+		<div class="container">
+			<h1> Hal il </h1>
+			<div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
+			    <a class="btn-floating btn-large red modal-trigger tooltipped" data-position="left" data-delay="50" data-tooltip="Click to add item" onclick="open_add()">
+			      <i class="large material-icons">add</i>
+			    </a>
+			</div>
+
+			<div id="add_dialog" class="modal bottom-sheet">
+				<div class="modal-content">
+				  <div class="row">
+					 <form class="add_form col s6 offset-s3">
+		          		<div class="row">
+					        <div class="input-field col s6">
+					          <input id="task" type="text" class="validate">
+					          <label for="task">Type your task here</label>
+					        </div>
+					    </div>
+					 </form>
+					</div>
+				</div>
+				<div class="modal-footer">
+				  <a class="modal-action modal-close waves-effect waves-green btn-flat" onclick="add_task()">Add to list</a>
+				</div>
+			</div>
+
+			<div class="todo">	
+				<h4> Coming up next </h4>			
+				<ul class="collection">
+			        
+      			</ul>
+			</div>
+
+			<div class="completed">
+				<h4> Completed </h4>
+				<ul class="collection">
+			         
+      			</ul>
+			</div>
+		</div>
+		<!-- Compiled and minified JavaScript -->
+	  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+		<script src="hw4.js"></script>
+	</body>
+</html>

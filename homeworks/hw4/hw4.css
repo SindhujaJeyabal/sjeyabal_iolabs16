@@ -1,0 +1,17 @@
+
+body {
+	font-size: 18px;
+	box-sizing: border-box;
+	text-align: center;
+}
+
+.todo, .completed {
+	box-sizing: border-box;
+	display: inline-block;
+	width: 40%;
+	vertical-align: top;
+}
+
+.card-action a{
+	color: "yellow accent-2";
+}

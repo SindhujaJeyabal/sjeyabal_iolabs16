@@ -5,9 +5,13 @@ body{
 	box-sizing: border-box;
 }
 
+#account {
+	padding: 1em 7em;
+}
+
 /* Banner */
 
-.banner p{
+.banner h1{
 	padding-top: 1.5em;
 }
 
@@ -15,7 +19,7 @@ body{
 	float: left;
 	padding-left: 2em;
 	padding-top: 1.5em;
-	width: 95%;
+	width: 90%;
 	height: 30%;
 }
 

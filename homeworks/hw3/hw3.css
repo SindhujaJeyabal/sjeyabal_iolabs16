@@ -95,7 +95,7 @@ brandtext{
     text-align: center;
 }
 
-.banner p{
+.banner h1{
 	box-sizing: border-box;
 	color: #F3F3F1;
 	font:1.5em Futura, 'Century Gothic', AppleGothic, sans-serif;
@@ -148,6 +148,7 @@ brandtext{
 
 .banner input[type="image"]:hover{
 	height: 3.2em;
+	border: 0px;
 }
 
 .hamburger{
@@ -161,7 +162,7 @@ brandtext{
 }
 
 .hamburger input[type="image"]:hover{
-	width: 2.2em;
+	height: 3.2em;
 }
 
 .main_content{
@@ -241,14 +242,9 @@ brandtext{
 	vertical-align: top;
 }
 
-.bottom_container .lead{
+.bottom_container h2{
 	color: #F3F3F1;
 	font:1.5em Futura, 'Century Gothic', AppleGothic, sans-serif;
-}
-
-.bottom_container p{
-	color: #F3F3F1;
-	font:1em Futura, 'Century Gothic', AppleGothic, sans-serif;
 	padding: 1% 0;
 }
 

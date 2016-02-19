@@ -28,3 +28,12 @@ body{
 	width: 15em;
 	height: 16em;
 }
+
+/* Bottom COntainer */
+.bottom_container h2{
+	font-size: 0.8em;
+}
+
+.bottom_container ul li{
+	font-size: 0.7em;
+}

@@ -1,0 +1,65 @@
+
+nav{
+	background-color: #FFFFFF;
+}
+
+nav img{
+	box-sizing: border-box;
+	display: inline-block;
+	max-height: 90%;
+	padding: 0.5em 0em 0em 1em;
+}
+
+nav h3{
+	display: inline-block;
+	color: #D34404;
+	font-size: 2em;
+	margin: 0;
+	max-height: 90%;
+}
+
+.row{
+	vertical-align: center;
+}
+
+.row .button{
+	padding-top: 2em;
+}
+
+#queryButton {
+	box-sizing: border-box;
+	display: inline-block;
+	background-color: #D34404;
+}
+
+.listbox{
+	box-sizing: border-box;
+	display: inline-block;
+	width: 49%;
+	text-align: center;
+	max-height: 100em;
+}
+
+#songs, #playlist{
+	box-sizing: border-box;
+	display: inline-block;
+	width: 100%;
+	text-align: left;
+}
+
+#songs{
+	float: left;
+	padding-left: 1em;
+}
+
+#playlist{
+	float: right;
+	padding-right: 1em;
+}
+
+.action-button{
+	display: inline-block;
+	box-sizing: border-box;
+	color: #D34404;
+	cursor: pointer; cursor: hand;
+}

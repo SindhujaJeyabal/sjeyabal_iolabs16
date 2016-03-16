@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block title %}
+	Survey
+{% endblock %}
+
+{% block header %}
+	{{ super() }}
+	<form action="logout" id="logout">
+		<span id="username">Logged in as {{ name }}</span>
+		<input class="action-button" id="logout-button" type="submit" value="Logout">
+	</form>
+{% endblock %}
+
+{% block content %}
+	<h1> Here are the aggregate results</h1>
+	<span class="result-item">Total number of responses so far {{ counter }}</span>
+	<span class="result-item">Average score before IO Lab {{ avg_before }}</span>
+	<span class="result-item">Average score after IO Lab {{ avg_after }}</span>
+
+{% endblock %}

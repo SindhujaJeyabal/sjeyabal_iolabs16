@@ -1,0 +1,50 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title> IO Music </title>
+
+		<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+		<link rel="stylesheet" type="text/css" href="hw5.css">
+
+	</head>
+
+	<body>
+		<nav>
+		    <div class="nav-wrapper">
+		      <img src="assets/logo.png"> 
+		      <h3>IO Music</h3>
+		    </div>
+	  	</nav>
+
+		<div class="container">
+			<div class="row">
+			    <div class="input-field col s4 offset-s3">
+					<input placeholder="Your song search" name="song" id="queryText" type="text" class="validate">
+			    </div>
+			    <div class="button col s2 ">
+					<a id="queryButton" class="waves-effect waves-light btn">Search</a>
+			    </div>
+		  	</div>
+
+		  	<div class='listbox'> 
+		  		<h3> Results </h3>
+		  		<ul id="songs" class="collection">
+				</ul>
+		  	</div>
+			
+		  	<div class='listbox'> 
+		  		<h3> Playlist </h3>
+		  		<ul id="playlist" class="collection">
+				</ul>
+		  	</div>
+		</div>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+		<script type='text/javascript' src="https://stratus.soundcloud.com/stratus.js"></script>
+		<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="hw5.js"></script>
+	</body>
+</html>

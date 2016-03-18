@@ -17,13 +17,9 @@ class Customer(db.Model):
     orders = db.relationship('Order', secondary = orders,
         backref=db.backref('customers', lazy='dynamic'))
 
-    # You need to a relationship to Address table here
-    # see http://flask-sqlalchemy.pocoo.org/2.1/models/#one-to-many-relationships
-
     def __repr__(self):
         return 'Customer ' +  str(self.id) + " " + self.fname + " " + self.lname
 
-# Your Address code should go here
 class Address(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     street = db.Column(db.String(20), unique=False)
@@ -34,7 +30,8 @@ class Address(db.Model):
     customer_id = db.Column(db.Integer, db.ForeignKey('customer.id'))
 
     def __repr__(self):
-        return 'Address ' +  str(self.id) + " " + self.street + " " + str(self.customer.id)
+        return 'Address ' +  str(self.id) + " " + self.street + " " \
+        + str(self.customer.id)
 
 class Order(db.Model):
     id = db.Column(db.Integer, primary_key=True)
@@ -43,4 +40,4 @@ class Order(db.Model):
     parts = db.Column(db.Integer, unique=False)
 
     def __repr__(self):
-        return 'Orders ' +  str(self.id) + " " + str(self.cost)
+        return 'Orders ' +  self.name + " " + str(self.id) + " " + str(self.cost)

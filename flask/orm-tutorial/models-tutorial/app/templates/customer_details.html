@@ -15,13 +15,31 @@
         </div>
 
         <!-- Modal Structure -->
-        <div id="modal1" class="modal">
+        <div id="address_modal" class="modal">
           <div class="modal-content">
-            <h4>Modal Header</h4>
-            <p>A bunch of text</p>
-          </div>
-          <div class="modal-footer">
-            <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+            <form class="col s12" action="" method="post">
+              {{ addressForm.hidden_tag() }}
+              <div class="row">
+                <div class="col s4">
+                  {{ addressForm.street.label }} {{ addressForm.street(size=20) }}
+                </div>
+                <div class="col s2">
+                  {{ addressForm.city.label }} {{ addressForm.city(size=20) }}
+                </div>
+                <div class="col s2">
+                  {{ addressForm.state.label }} {{ addressForm.state(size=20) }}
+                </div>
+                <div class="col s2">
+                  {{ addressForm.country.label }} {{ addressForm.country(size=20) }}
+                </div>
+                <div class="col s2">
+                  {{ addressForm.zipcode.label }} {{ addressForm.zipcode(size=20) }}
+                </div>
+              </div>
+              <input class="modal-action modal-close
+                        waves-effect waves-green btn-flat right"
+                      type="submit" value="Add">
+            </form>
           </div>
         </div>
         <div class="col s6">
@@ -36,8 +54,39 @@
               </li>
             {% endfor %}
           </div>
-          <a id="add_address" href="#modal1" class="waves-effect waves-light btn">Add another address</a>
+          <a id="add_address"
+            class="waves-effect waves-light btn">Add another address</a>
         </div>
+        <div id="order_modal" class="modal">
+          <div class="modal-content">
+            <form class="col s12" action="" method="post">
+              {{ OrderForm.hidden_tag() }}
+              <div class="row">
+                <div class="col s6">
+                  {{ OrderForm.name.label }} {{ OrderForm.name(size=20) }}
+                </div>
+                <div class="col s3">
+                  {{ OrderForm.cost.label }} {{ OrderForm.cost(size=20) }}
+                </div>
+                <div class="col s3">
+                  {{ OrderForm.parts.label }} {{ OrderForm.parts(size=20) }}
+                </div>
+              </div>
+              <input class="modal-action modal-close
+                        waves-effect waves-green btn-flat right"
+                      type="submit" value="Add">
+            </form>
+          </div>
+        </div>
+        <ul id='order_dropdown' class='dropdown-content'>
+          {% for order in new_orders %}
+            <li><a href="{{ url_for('link_order',
+                      customer_id = customer.id, order_id = order.id) }}">
+                      {{ order.name }}</a></li>
+          {% endfor %}
+        <li class="divider"></li>
+        <li><a id="add_order">Add New</a></li>
+      </ul>
         <div class="col s6">
           <h4> Orders </h4>
           <div class="collection">
@@ -48,7 +97,7 @@
               </li>
             {% endfor %}
           </div>
-          <a id="add_order" class="waves-effect waves-light btn">Add an order</a>
+          <a class='waves-effect waves-light dropdown-button btn' href='#' data-activates='order_dropdown'>Add an order</a>
         </div>
       </div>
     </div>

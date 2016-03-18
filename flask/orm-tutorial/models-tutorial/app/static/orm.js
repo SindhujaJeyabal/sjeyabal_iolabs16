@@ -1,4 +1,8 @@
 $(document).ready(function(){
-  $("#add_address").leanModal();
-  $("#add_order").leanModal();
+  $("#add_address").click(function(){
+    $("#address_modal").openModal();
+  });
+  $("#add_order").click(function(){
+    $("#order_modal").openModal();
+  });
 });

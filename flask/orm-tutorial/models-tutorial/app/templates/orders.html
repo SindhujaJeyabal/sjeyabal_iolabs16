@@ -20,8 +20,8 @@
         </div>
         <div class="collection col s6">
           {% for oc in order_customers %}
-            <li class="collection-item">Name: {{ oc.order.name}}
-              Cost: {{ oc.order.cost }},
+            <li class="collection-item">{{ oc.order.name}}:
+              ${{ oc.order.cost }},
               Parts: {{ oc.order.parts }}
               {% for customer in oc.customers %}
                 {{ customer.fname }} {{ customer.lname }}

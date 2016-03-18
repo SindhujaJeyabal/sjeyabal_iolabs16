@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block content %}
+  <div class="container">
+    <div class="row">
+      <h1>Welcome to ACME Aircraft Parts</h1>
+      <div class= "section">
+        <a href="{{ url_for('create_order') }}">Add an Order</a>
+      </div>
+      <div class="divider"></div>
+      <div class="section">
+        <div class="row">
+          <div class="col s6">
+            <h3 id="view_name">Orders</h3>
+          </div>
+          <div class="col s3">
+            <a href="{{ url_for('display_customer') }}"
+              class="waves-effect waves-light btn">Customers view
+            </a>
+          </div>
+        </div>
+        <div class="collection col s6">
+          {% for oc in order_customers %}
+            <li class="collection-item">{{ oc.order.name}}:
+              ${{ oc.order.cost }},
+              Parts: {{ oc.order.parts }}
+              {% for customer in oc.customers %}
+                {{ customer.fname }} {{ customer.lname }}
+              {% endfor %}
+            </li>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}

@@ -1,0 +1,49 @@
+<!-- DELETE THIS PART FOR NUM. 4 -->
+{% extends "base.html" %}
+<!-- DELETE THIS PART FOR NUM. 4 -->
+
+{% block title %}
+	Survey
+{% endblock %}
+
+
+{% block header %}
+<!-- DELETE THIS PART FOR NUM. 4 -->
+	{{ super() }}
+<!-- DELETE THIS PART FOR NUM. 4 -->
+	<form action="logout" id="logout">
+		<span id="username">Logged in as {{ name }}</span>
+		<input class="action-button" id="logout-button" type="submit" value="Logout">
+	</form>
+{% endblock %}
+
+<!-- DELETE THIS PART FOR NUM. 4 -->
+{% block content %}
+<!-- DELETE THIS PART FOR NUM. 4 -->
+	<h1>A Little Survey About You</h1>
+		<div class="main-container">
+			<h3>Some of your favorites</h3>
+			<label class="survey-item">What's your favorite color?<input type="text" name="color"></label>
+			<label class="survey-item">How about your favorite food?
+			<input type="text" name="food"></label>
+			<label class="survey-item">And your favorite vacation spot?
+			<input type="text" name="vacation"></label>
+
+			<h3>Let's look at your front end skillz progression</h3>
+			<label class="survey-item">What was your front end proficiency before IO Lab?<input type="range" min="1" max="5" step=".5" name="front-end-before" id="fe-before"><span></span></label>
+			<label class="survey-item">How about after the front end module?<input type="range" min="1" max="5" step=".5" name="front-end-after" id="fe-after"><span></span></label>
+			<label class="survey-item"> What are you most interested in?
+				<select class="survey-item" name="interest">
+					<option value="fe"> Front End </option>
+					<option value="be"> Back End </option>
+					<option value="ux"> UX Research </option>
+					<option value="all"> Everything </option>
+				</select>
+			 </label>
+			<textarea class="survey-item" cols="50" name="comment">Additional comments here..</textarea>
+			<button class="action-button" id="submit-survey">Submit</button>
+	</div>
+
+<!-- DELETE THIS PART FOR NUM. 4 -->
+{% endblock %}
+<!-- DELETE THIS PART FOR NUM. 4 -->

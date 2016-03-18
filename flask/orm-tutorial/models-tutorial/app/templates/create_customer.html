@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container">
+  <div class="row">
+    <div class= "section">
+      <a href="{{ url_for('display_customer') }}">Home</a>
+    </div>
+    <h2>Add Customer to Our Database</h2>
+    <div class="divider"></div>
+    <div class="section">
+      <div class="row">
+        <form class="col s12" action="" method="post" name="login">
+          {{ form.hidden_tag() }}
+          <div class="row">
+            <div class="col s6">
+              {{ form.fname.label }} {{ form.fname(size=20) }}
+            </div>
+            <div class="col s6">
+              {{ form.lname.label }} {{ form.lname(size=20) }}
+            </div>
+          </div>
+          <div class="row">
+            <div class="col s12">
+              {{ form.company.label }} {{ form.company(size=20) }}
+            </div>
+          </div>
+          <div class="row">
+            <div class="col s6">
+              {{ form.email.label }} {{ form.email(size=20) }}
+            </div>
+            <div class="col s6">
+              {{ form.phone.label }} {{ form.phone(size=20) }}
+            </div>
+          </div>
+      </div>
+        <div class="section">
+          <div class="row">
+            <div class="col s4">
+              {{ form.street.label }} {{ form.street(size=20) }}
+            </div>
+            <div class="col s2">
+              {{ form.city.label }} {{ form.city(size=20) }}
+            </div>
+            <div class="col s2">
+              {{ form.state.label }} {{ form.state(size=20) }}
+            </div>
+            <div class="col s2">
+              {{ form.country.label }} {{ form.country(size=20) }}
+            </div>
+            <div class="col s2">
+              {{ form.zipcode.label }} {{ form.zipcode(size=20) }}
+            </div>
+          </div>
+        </div>
+        <p><input class="waves-effect waves-light btn right" type="submit" value="Create Customer"></p>
+      </form>
+    </div>
+  </div>
+</div>
+{% endblock %}

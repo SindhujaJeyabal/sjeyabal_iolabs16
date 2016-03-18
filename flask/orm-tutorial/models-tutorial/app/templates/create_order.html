@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container">
+  <div class="row">
+    <div class= "section">
+      <a href="{{ url_for('display_customer') }}">Home</a>
+    </div>
+    <h2>Add Order</h2>
+    <div class="divider"></div>
+    <div class="section">
+      <div class="row">
+        <form class="col s12" action="" method="post" name="login">
+          {{ form.hidden_tag() }}
+          <div class="row">
+            <div class="col s6">
+              {{ form.name.label }} {{ form.name(size=20) }}
+            </div>
+          </div>
+          <div class="row">
+            <div class="col s6">
+              {{ form.cost.label }} {{ form.cost(size=20) }}
+            </div>
+            <div class="col s6">
+              {{ form.parts.label }} {{ form.parts(size=20) }}
+            </div>
+          </div>
+      </div>
+        <p><input class="waves-effect waves-light btn right" type="submit"
+            value="Create Order">
+        </p>
+      </form>
+    </div>
+  </div>
+</div>
+{% endblock %}

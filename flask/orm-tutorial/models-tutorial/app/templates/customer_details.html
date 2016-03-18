@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{% block content %}
+  <div class="container">
+    <div class="row">
+      <h1>Welcome to ACME Aircraft Parts</h1>
+      <div class= "section">
+        <a href="{{ url_for('display_customer') }}">View All</a>
+      </div>
+      <div class="divider"></div>
+      <div class="section">
+        <div class="row">
+          <div class="col s6">
+            <h3 id="view_name"> {{ customer.fname }} {{ customer.lname }}</h3>
+          </div>
+        </div>
+
+        <!-- Modal Structure -->
+        <div id="modal1" class="modal">
+          <div class="modal-content">
+            <h4>Modal Header</h4>
+            <p>A bunch of text</p>
+          </div>
+          <div class="modal-footer">
+            <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+          </div>
+        </div>
+        <div class="col s6">
+          <h4> Addresses </h4>
+          <div class="collection">
+            {% for address in addresses %}
+              <li class="collection-item">{{ address.street }},
+                                          {{ address.city }},
+                                          {{ address.state }},
+                                          {{ address.country }},
+                                          {{ address.zipcode }}
+              </li>
+            {% endfor %}
+          </div>
+          <a id="add_address" href="#modal1" class="waves-effect waves-light btn">Add another address</a>
+        </div>
+        <div class="col s6">
+          <h4> Orders </h4>
+          <div class="collection">
+            {% for order in orders %}
+              <li class="collection-item">{{ order.name }},
+                                          {{ order.cost }},
+                                          {{ order.parts }}
+              </li>
+            {% endfor %}
+          </div>
+          <a id="add_order" class="waves-effect waves-light btn">Add an order</a>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}
